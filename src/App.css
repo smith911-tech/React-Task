@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-bg {
+  background: url('./assets/signin.png');
+  height: 100vmin;
+  width: 100%;
+}

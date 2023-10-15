@@ -16,7 +16,7 @@ export default function Login() {
   const [password, setPassword] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState<boolean>(false);
   // ! posted popup
   const handleSuccess = () => {
     message.success("Login Successfully");
@@ -55,7 +55,7 @@ export default function Login() {
         setSuccess(true);
         handleSuccess()
         setTimeout(() => {
-            navigate("/Dashboard");
+            navigate("/Dashboard/events");
         }, 1000)
       } else {
         handleError()
@@ -68,7 +68,7 @@ export default function Login() {
     }
   };
   return (
-    <main className=" mb-9">
+    <main className=" mb-9 custom-bg">
       <Header />
       <section className="w-full justify-center flex mt-4 font-Inter">
         <form
