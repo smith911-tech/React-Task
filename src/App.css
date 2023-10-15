@@ -7,3 +7,13 @@
   height: 100vmin;
   width: 100%;
 }
+.ActiveLink{
+  stroke: #828282;
+}
+.ActiveLink.active{
+  color: #32D583;
+  background-color: #ECFDF3;
+}
+.ActiveLink.active svg path {
+  stroke: #32D583 !important;
+}

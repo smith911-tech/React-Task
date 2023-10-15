@@ -9,6 +9,11 @@ export default function Help() {
         <header className="border-b border-[#E6E7EC] pb-1 flex justify-end mr-5">
           <Headericon />
         </header>
+        <article className=" mt-7 px-3">
+          <div className="flex justify-between gap-4 ">
+            <h2 className=" font-semibold text-xl">Help</h2>
+          </div>
+        </article>
       </section>
     </main>
   );
